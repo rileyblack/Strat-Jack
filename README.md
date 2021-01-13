@@ -8,6 +8,6 @@ Intelligent computer-vision based real-time embedded system which recommends opt
 * Real-time embedded systems
 * Linux command-line environements
 * Agile group software development
-* Enterprise-scale collaboration tools ([JIRA](https://en.wikipedia.org/wiki/Jira_(software)) project management, [Confluence](https://en.wikipedia.org/wiki/Confluence_(software)) cooperation, [BitBucket](https://en.wikipedia.org/wiki/Bitbucket) Git-based repos)
+* Enterprise-scale collaboration tools ([JIRA](https://en.wikipedia.org/wiki/Jira_(software)) project management, [Confluence](https://en.wikipedia.org/wiki/Confluence_(software)) cooperation, [BitBucket](https://en.wikipedia.org/wiki/Bitbucket) Git repos)
 * Object-oriented programming priciples and implementation
 * Formal software design components (requirement generation, risk identification/mitigation, UML, testing, documentation, etc.)
