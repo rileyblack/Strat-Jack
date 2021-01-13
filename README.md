@@ -6,7 +6,7 @@ Intelligent computer-vision based real-time embedded system which recommends opt
 * [OpenCV](https://opencv.org/)
 * Computer vision/Image processing
 * Real-time embedded systems
-* Linux command-line environements
+* Linux command-line environments
 * [CMake](https://en.wikipedia.org/wiki/CMake) build system generator 
 * [Doxygen](https://www.doxygen.nl/index.html) code documentation
 * Agile group software development
