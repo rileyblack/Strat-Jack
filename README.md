@@ -1,5 +1,5 @@
 # Strat-Jack
-Intelligent computer-vision based real-time embedded system which recommends optimal strategy to the user during in-person [Blackjack](https://en.wikipedia.org/wiki/Blackjack) card games based on live feed of playing hands.
+Intelligent computer-vision based real-time embedded system which recommends optimal user strategy by analyzing live feeds of in-person [Blackjack](https://en.wikipedia.org/wiki/Blackjack) card games.
 
 ## Practical Take-Away Experience
 * C++
