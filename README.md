@@ -7,6 +7,7 @@ Intelligent computer-vision based real-time embedded system which recommends opt
 * Computer vision/Image processing
 * Real-time embedded systems
 * Linux command-line environements
+* [Doxygen](https://www.doxygen.nl/index.html) Code Documentation
 * Agile group software development
 * Enterprise-scale collaboration tools ([JIRA](https://en.wikipedia.org/wiki/Jira_(software)) project management, [Confluence](https://en.wikipedia.org/wiki/Confluence_(software)) cooperation, [BitBucket](https://en.wikipedia.org/wiki/Bitbucket) Git repos)
 * Object-oriented programming principles and implementation
