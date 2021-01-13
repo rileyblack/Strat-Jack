@@ -1,0 +1,290 @@
+\hypertarget{class_user}{}\doxysection{User Class Reference}
+\label{class_user}\index{User@{User}}
+
+
+Class which represents the \mbox{\hyperlink{class_user}{User}} during a blackack game who interacts with the system.  
+
+
+
+
+{\ttfamily \#include $<$C\+:/\+Users/aaron/\+One\+Drive/\+Documents/school/4th year/3307/\+Pi\+\_\+project/\+User.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User}} ()
+\begin{DoxyCompactList}\small\item\em default Constructor for the \mbox{\hyperlink{class_user}{User}} object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_user_afb0f091dd795bc45e0785a5a03908484}{User}} (std\+::string username, int balance)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_user}{User}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}{$\sim$\+User}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_user}{User}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hand}{Hand}} \mbox{\hyperlink{class_user_adeab5e1a972aa2999b874a07a174273e}{get\+Hand}} ()
+\begin{DoxyCompactList}\small\item\em Getter method which returns the private \mbox{\hyperlink{class_hand}{Hand}} attribute. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_ae8a184f28edb33278125df8940719f0e}{get\+Balance}} ()
+\begin{DoxyCompactList}\small\item\em Getter method which allows access to the private balance attribute. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_adb316ac38d5f62a967686e7b736a0469}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter method which allows access to the private name attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a616f2f064d2c3ef1049c5d21053c5223}{set\+Balance}} (int amount)
+\begin{DoxyCompactList}\small\item\em Setter method which changes the value of this \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s balance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_af0c58c22f8d1ee234d3178241f049d96}{add\+To\+User\+Hand}} (\mbox{\hyperlink{class_card}{Card}} card1, \mbox{\hyperlink{class_card}{Card}} card2)
+\begin{DoxyCompactList}\small\item\em Adds the initial two cards of a blackjack round to the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s hand. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_aa3052162073b8041d46d1f58507cf39e}{hit}} (\mbox{\hyperlink{class_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em function which represents the move \char`\"{}\+Hit\char`\"{} in a Blackjack round \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a12d0f21345fe45550714e7f6ca83bef5}{stand}} ()
+\begin{DoxyCompactList}\small\item\em method which represents the move \char`\"{}\+Stay\char`\"{} in a blackjack round \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a8cbc5d06a4f25dc7322d56e5025a760a}{double\+Down}} (\mbox{\hyperlink{class_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em method which represents the move \char`\"{}\+Double Down in a backjack round\char`\"{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a6424318411db1861a0d41eee5eb166ab}{clear\+Hand}} ()
+\begin{DoxyCompactList}\small\item\em method which clears the hand attribute and resets it to its default configuration upon its construction \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a53d6bf9f254d08b4ea8b001ff44a5fbf}{set\+To\+Default}} ()
+\begin{DoxyCompactList}\small\item\em Setter method which resets all attributes of \mbox{\hyperlink{class_hand}{Hand}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_a656f555d559d402e87d8a9698e03e2ba}\label{class_user_a656f555d559d402e87d8a9698e03e2ba}} 
+int {\bfseries balance}
+\item 
+\mbox{\Hypertarget{class_user_a085d8d69282b6298964eab8351584536}\label{class_user_a085d8d69282b6298964eab8351584536}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_user_a56bdec7608d1c70f16a803f99f759e94}\label{class_user_a56bdec7608d1c70f16a803f99f759e94}} 
+\mbox{\hyperlink{class_hand}{Hand}} {\bfseries hand}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class which represents the \mbox{\hyperlink{class_user}{User}} during a blackack game who interacts with the system. 
+
+A user object is used to represent a player of the game, containing methods and atributes for modifying and maniulating the user\textquotesingle{}s hand and currency
+
+\begin{DoxyAuthor}{Author}
+Riley 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_user_a4a0137053e591fbb79d9057dd7d2283d}\label{class_user_a4a0137053e591fbb79d9057dd7d2283d}} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+default Constructor for the \mbox{\hyperlink{class_user}{User}} object 
+
+\begin{DoxyReturn}{Returns}
+a new \mbox{\hyperlink{class_user}{User}} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Authors}
+Sam, Aaron 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_user_afb0f091dd795bc45e0785a5a03908484}\label{class_user_afb0f091dd795bc45e0785a5a03908484}} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{username,  }\item[{int}]{balance }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_user}{User}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & represents the Username attribute of the \mbox{\hyperlink{class_user}{User}} object \\
+\hline
+{\em balance} & is an integer which represents the balance that the user will begin with at the beginning of their session \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Riley, Michael 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}\label{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}} 
+\index{User@{User}!````~User@{$\sim$User}}
+\index{````~User@{$\sim$User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{$\sim$User()}{~User()}}
+{\footnotesize\ttfamily User\+::$\sim$\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{class_user}{User}} object. 
+
+destroys the instance of this \mbox{\hyperlink{class_user}{User}} object, once the object goes out of the scope
+
+\begin{DoxyAuthor}{Author}
+Riley, Michael 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_af0c58c22f8d1ee234d3178241f049d96}\label{class_user_af0c58c22f8d1ee234d3178241f049d96}} 
+\index{User@{User}!addToUserHand@{addToUserHand}}
+\index{addToUserHand@{addToUserHand}!User@{User}}
+\doxysubsubsection{\texorpdfstring{addToUserHand()}{addToUserHand()}}
+{\footnotesize\ttfamily void User\+::add\+To\+User\+Hand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card1,  }\item[{\mbox{\hyperlink{class_card}{Card}}}]{card2 }\end{DoxyParamCaption})}
+
+
+
+Adds the initial two cards of a blackjack round to the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s hand. 
+
+indicates the first card tha the \mbox{\hyperlink{class_dealer}{Dealer}} draws at the beginning of the round
+
+
+\begin{DoxyParams}{Parameters}
+{\em card1} & represents the first card which is traditionally face up throughout the durationod a round \\
+\hline
+{\em card2} & represents the second face up card for the initial \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s hand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Riley 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_user_a6424318411db1861a0d41eee5eb166ab}\label{class_user_a6424318411db1861a0d41eee5eb166ab}} 
+\index{User@{User}!clearHand@{clearHand}}
+\index{clearHand@{clearHand}!User@{User}}
+\doxysubsubsection{\texorpdfstring{clearHand()}{clearHand()}}
+{\footnotesize\ttfamily void User\+::clear\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method which clears the hand attribute and resets it to its default configuration upon its construction 
+
+\begin{DoxyAuthor}{Author}
+Sam, Aaron 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_user_a8cbc5d06a4f25dc7322d56e5025a760a}\label{class_user_a8cbc5d06a4f25dc7322d56e5025a760a}} 
+\index{User@{User}!doubleDown@{doubleDown}}
+\index{doubleDown@{doubleDown}!User@{User}}
+\doxysubsubsection{\texorpdfstring{doubleDown()}{doubleDown()}}
+{\footnotesize\ttfamily void User\+::double\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+method which represents the move \char`\"{}\+Double Down in a backjack round\char`\"{} 
+
+To double down is to do a hit and also double the user\textquotesingle{}s bet for the current round of blackjack
+
+
+\begin{DoxyParams}{Parameters}
+{\em bet} & represents the integer of the users current bet, which will doubled and updated accodringly \\
+\hline
+{\em card} & represents the card which will be drawn from the \char`\"{}hit\char`\"{} portion of a double down move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Sam, Aaron 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_user_ae8a184f28edb33278125df8940719f0e}\label{class_user_ae8a184f28edb33278125df8940719f0e}} 
+\index{User@{User}!getBalance@{getBalance}}
+\index{getBalance@{getBalance}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getBalance()}{getBalance()}}
+{\footnotesize\ttfamily int User\+::get\+Balance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method which allows access to the private balance attribute. 
+
+\begin{DoxyReturn}{Returns}
+integer representing the current balance of this \mbox{\hyperlink{class_user}{User}} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Riley, Michael 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_user_adeab5e1a972aa2999b874a07a174273e}\label{class_user_adeab5e1a972aa2999b874a07a174273e}} 
+\index{User@{User}!getHand@{getHand}}
+\index{getHand@{getHand}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getHand()}{getHand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hand}{Hand}} User\+::get\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method which returns the private \mbox{\hyperlink{class_hand}{Hand}} attribute. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_hand}{Hand}} object, wich represents this \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s \mbox{\hyperlink{class_hand}{Hand}} of Cards 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Riley, Michael 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_user_adb316ac38d5f62a967686e7b736a0469}\label{class_user_adb316ac38d5f62a967686e7b736a0469}} 
+\index{User@{User}!getName@{getName}}
+\index{getName@{getName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string User\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method which allows access to the private name attribute. 
+
+\begin{DoxyReturn}{Returns}
+a string representing the username this \mbox{\hyperlink{class_user}{User}} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Riley 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_user_aa3052162073b8041d46d1f58507cf39e}\label{class_user_aa3052162073b8041d46d1f58507cf39e}} 
+\index{User@{User}!hit@{hit}}
+\index{hit@{hit}!User@{User}}
+\doxysubsubsection{\texorpdfstring{hit()}{hit()}}
+{\footnotesize\ttfamily void User\+::hit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+function which represents the move \char`\"{}\+Hit\char`\"{} in a Blackjack round 
+
+To hit is to request another card, given that their current \mbox{\hyperlink{class_hand}{Hand}} attribute is lower than 21
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & represents the new card object which is drawn and pushed onto the \mbox{\hyperlink{class_hand}{Hand}} attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Riley, Michael 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_user_a616f2f064d2c3ef1049c5d21053c5223}\label{class_user_a616f2f064d2c3ef1049c5d21053c5223}} 
+\index{User@{User}!setBalance@{setBalance}}
+\index{setBalance@{setBalance}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setBalance()}{setBalance()}}
+{\footnotesize\ttfamily void User\+::set\+Balance (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Setter method which changes the value of this \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s balance. 
+
+Invoked after a blackjack round, increases if the \mbox{\hyperlink{class_user}{User}} won their bet, decreases by that amount otherwise
+
+\begin{DoxyAuthor}{Author}
+Michael 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_user_a53d6bf9f254d08b4ea8b001ff44a5fbf}\label{class_user_a53d6bf9f254d08b4ea8b001ff44a5fbf}} 
+\index{User@{User}!setToDefault@{setToDefault}}
+\index{setToDefault@{setToDefault}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setToDefault()}{setToDefault()}}
+{\footnotesize\ttfamily void User\+::set\+To\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Setter method which resets all attributes of \mbox{\hyperlink{class_hand}{Hand}} object. 
+
+Method is used at the end of a round, when the \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s hand needs to be reset and cleared for the next round \mbox{\Hypertarget{class_user_a12d0f21345fe45550714e7f6ca83bef5}\label{class_user_a12d0f21345fe45550714e7f6ca83bef5}} 
+\index{User@{User}!stand@{stand}}
+\index{stand@{stand}!User@{User}}
+\doxysubsubsection{\texorpdfstring{stand()}{stand()}}
+{\footnotesize\ttfamily void User\+::stand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method which represents the move \char`\"{}\+Stay\char`\"{} in a blackjack round 
+
+To stand is to request that the user\textquotesingle{}s turn is over, and control is given to the dealer to deal their cards to determine a winner
+
+\begin{DoxyAuthor}{Author}
+Riley, Michael 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+User.\+h\item 
+User.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,172 @@
+\hypertarget{class_hand}{}\doxysection{Hand Class Reference}
+\label{class_hand}\index{Hand@{Hand}}
+
+
+class which represents the playing hand of a player during a blackjack game  
+
+
+
+
+{\ttfamily \#include $<$C\+:/\+Users/aaron/\+One\+Drive/\+Documents/school/4th year/3307/\+Pi\+\_\+project/\+Hand.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hand_aa733faf150351c640fc7d1bf460b07e9}{Hand}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_hand}{Hand}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hand_a7ff29a6f23f98c5e57f44d23a76912be}{$\sim$\+Hand}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_hand}{Hand}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_hand_ad89db826f25387eba229214906e41ff9}{get\+Sum}} ()
+\begin{DoxyCompactList}\small\item\em Getter method which gets the sum of all card ranks in hand. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_hand_adc8d65906decca39eff7701dd46dba46}{get\+Num\+Of\+Cards}} ()
+\begin{DoxyCompactList}\small\item\em Getter method which returns the number of card objects this hand object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hand_acc3a64b222156fa4cf6a671a5cce0c55}{is\+Hard}} ()
+\begin{DoxyCompactList}\small\item\em Boolean method which determines if this \mbox{\hyperlink{class_hand}{Hand}} object is Hard,. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hand_abc63e628253dfa77485ba026102eb79f}{set\+To\+Default}} ()
+\begin{DoxyCompactList}\small\item\em Setter method which resets all attributes of \mbox{\hyperlink{class_hand}{Hand}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hand_afe193a31ec6014597ac25a99a5782758}{add\+Card}} (\mbox{\hyperlink{class_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em Method which adds a card object to the hand private attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hand_afaa16b11f4139d8f54e1dfa5d56dae49}{clear\+Cards}} ()
+\begin{DoxyCompactList}\small\item\em Method which clears the hand vector attribute. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hand_ab6e4e6eccbe6621bb41874bafac1c78b}\label{class_hand_ab6e4e6eccbe6621bb41874bafac1c78b}} 
+std\+::vector$<$ \mbox{\hyperlink{class_card}{Card}} $>$ {\bfseries hand}
+\item 
+\mbox{\Hypertarget{class_hand_a19a7cbbc99a8fb2b4c803e0ef8723e3b}\label{class_hand_a19a7cbbc99a8fb2b4c803e0ef8723e3b}} 
+int {\bfseries sum}
+\item 
+\mbox{\Hypertarget{class_hand_a883581bf998386855fa945444244c887}\label{class_hand_a883581bf998386855fa945444244c887}} 
+int {\bfseries number\+Of\+Cards}
+\item 
+\mbox{\Hypertarget{class_hand_a6a6b5c22fe9aa3707a6e608db39fc6be}\label{class_hand_a6a6b5c22fe9aa3707a6e608db39fc6be}} 
+bool {\bfseries hard}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class which represents the playing hand of a player during a blackjack game 
+
+a hand reprsents the collection of card objects a player holds, which determines their sum, indicating the appropriate move to make during a blackjack game
+
+\begin{DoxyAuthor}{Authors}
+Sam, Michael 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hand_aa733faf150351c640fc7d1bf460b07e9}\label{class_hand_aa733faf150351c640fc7d1bf460b07e9}} 
+\index{Hand@{Hand}!Hand@{Hand}}
+\index{Hand@{Hand}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{Hand()}{Hand()}}
+{\footnotesize\ttfamily Hand\+::\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_hand}{Hand}} object. 
+
+\begin{DoxyReturn}{Returns}
+a new instance of a \mbox{\hyperlink{class_hand}{Hand}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hand_a7ff29a6f23f98c5e57f44d23a76912be}\label{class_hand_a7ff29a6f23f98c5e57f44d23a76912be}} 
+\index{Hand@{Hand}!````~Hand@{$\sim$Hand}}
+\index{````~Hand@{$\sim$Hand}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{$\sim$Hand()}{~Hand()}}
+{\footnotesize\ttfamily Hand\+::$\sim$\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{class_hand}{Hand}} object. 
+
+Destroys this instance of a hand object when its existence exits its scope 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hand_afe193a31ec6014597ac25a99a5782758}\label{class_hand_afe193a31ec6014597ac25a99a5782758}} 
+\index{Hand@{Hand}!addCard@{addCard}}
+\index{addCard@{addCard}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{addCard()}{addCard()}}
+{\footnotesize\ttfamily void Hand\+::add\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+Method which adds a card object to the hand private attribute. 
+
+Pushes \mbox{\hyperlink{class_card}{Card}} object onto its existing vector of \mbox{\hyperlink{class_card}{Card}} object
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & represents the \mbox{\hyperlink{class_card}{Card}} object to be pushed onto the hand vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hand_afaa16b11f4139d8f54e1dfa5d56dae49}\label{class_hand_afaa16b11f4139d8f54e1dfa5d56dae49}} 
+\index{Hand@{Hand}!clearCards@{clearCards}}
+\index{clearCards@{clearCards}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{clearCards()}{clearCards()}}
+{\footnotesize\ttfamily void Hand\+::clear\+Cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method which clears the hand vector attribute. 
+
+Empties only the \char`\"{}hand\char`\"{} attribute by clearing the vectors \mbox{\Hypertarget{class_hand_adc8d65906decca39eff7701dd46dba46}\label{class_hand_adc8d65906decca39eff7701dd46dba46}} 
+\index{Hand@{Hand}!getNumOfCards@{getNumOfCards}}
+\index{getNumOfCards@{getNumOfCards}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{getNumOfCards()}{getNumOfCards()}}
+{\footnotesize\ttfamily int Hand\+::get\+Num\+Of\+Cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method which returns the number of card objects this hand object. 
+
+\begin{DoxyReturn}{Returns}
+an integer representing the total number of cards in this \mbox{\hyperlink{class_hand}{Hand}} object ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hand_ad89db826f25387eba229214906e41ff9}\label{class_hand_ad89db826f25387eba229214906e41ff9}} 
+\index{Hand@{Hand}!getSum@{getSum}}
+\index{getSum@{getSum}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{getSum()}{getSum()}}
+{\footnotesize\ttfamily int Hand\+::get\+Sum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method which gets the sum of all card ranks in hand. 
+
+iterates through vector of cards, and sums up each rank
+
+\begin{DoxyReturn}{Returns}
+an integer representing a sum of all ranks 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hand_acc3a64b222156fa4cf6a671a5cce0c55}\label{class_hand_acc3a64b222156fa4cf6a671a5cce0c55}} 
+\index{Hand@{Hand}!isHard@{isHard}}
+\index{isHard@{isHard}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{isHard()}{isHard()}}
+{\footnotesize\ttfamily bool Hand\+::is\+Hard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Boolean method which determines if this \mbox{\hyperlink{class_hand}{Hand}} object is Hard,. 
+
+true if it is hard, meaning that it contains an ace which cannot be an 11, otherwise return false if it is soft, meaning that it contains an ace which can be 1 or 11
+
+\begin{DoxyReturn}{Returns}
+true or false, if is hard total or not ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hand_abc63e628253dfa77485ba026102eb79f}\label{class_hand_abc63e628253dfa77485ba026102eb79f}} 
+\index{Hand@{Hand}!setToDefault@{setToDefault}}
+\index{setToDefault@{setToDefault}!Hand@{Hand}}
+\doxysubsubsection{\texorpdfstring{setToDefault()}{setToDefault()}}
+{\footnotesize\ttfamily void Hand\+::set\+To\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Setter method which resets all attributes of \mbox{\hyperlink{class_hand}{Hand}} object. 
+
+Method is used at the end of a round, when the hand needs to be reset and cleared for the next round 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Hand.\+h\item 
+Hand.\+cpp\end{DoxyCompactItemize}

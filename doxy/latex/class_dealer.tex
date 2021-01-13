@@ -1,0 +1,125 @@
+\hypertarget{class_dealer}{}\doxysection{Dealer Class Reference}
+\label{class_dealer}\index{Dealer@{Dealer}}
+
+
+A class which represents a dealer Object.  
+
+
+
+
+{\ttfamily \#include $<$C\+:/\+Users/aaron/\+One\+Drive/\+Documents/school/4th year/3307/\+Pi\+\_\+project/\+Dealer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dealer_a518fd02cf57eaf55e06b7754c4649a3f}{Dealer}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_dealer}{Dealer}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dealer_a8320886a9414610ab1de1bd03de0e216}\label{class_dealer_a8320886a9414610ab1de1bd03de0e216}} 
+\mbox{\hyperlink{class_dealer_a8320886a9414610ab1de1bd03de0e216}{$\sim$\+Dealer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_dealer}{Dealer}} class, destroys this dealer object when the object goes out of scope. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hand}{Hand}} \mbox{\hyperlink{class_dealer_a03cc75803ed9f6e37607141e1d6bb934}{get\+Hand}} ()
+\begin{DoxyCompactList}\small\item\em Getter method which returns the private \mbox{\hyperlink{class_hand}{Hand}} attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dealer_a87adfb0ed4b55445f1c0146edd2b0456}{add\+To\+Dealer\+Hand}} (\mbox{\hyperlink{class_card}{Card}} face\+Up\+Card)
+\begin{DoxyCompactList}\small\item\em Adds the initial card of a blackjack round to the dealers hand, which is face up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dealer_af582114261addd5a74a3ca2cb3490ccf}{hit}} (\mbox{\hyperlink{class_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em A function which represents the move \char`\"{}\+Hit\char`\"{}; to hit is to request another card, given that their current, \mbox{\hyperlink{class_hand}{Hand}} attribute is lower than 21. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dealer_ab901e82f15d06a0eba37df9286c227e1}\label{class_dealer_ab901e82f15d06a0eba37df9286c227e1}} 
+void \mbox{\hyperlink{class_dealer_ab901e82f15d06a0eba37df9286c227e1}{clear\+Hand}} ()
+\begin{DoxyCompactList}\small\item\em a method which clears the hand attribute and resets it to fits default configuration upon its construction \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dealer_a133f0a1f8f5cad283d11831797c700fa}{set\+To\+Default}} ()
+\begin{DoxyCompactList}\small\item\em Setter method which resets all attributes of \mbox{\hyperlink{class_hand}{Hand}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dealer_af8a079f2ba9b1894470d3b3ddb9de60b}\label{class_dealer_af8a079f2ba9b1894470d3b3ddb9de60b}} 
+\mbox{\hyperlink{class_hand}{Hand}} {\bfseries hand}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class which represents a dealer Object. 
+
+creates arepresentation for a dealer in abackjack game the dealer plays against the user,and their hand is compared to the users,in order to determine a winner (if user does not bust)
+
+\begin{DoxyAuthor}{Authors}
+Sam, Michael 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dealer_a518fd02cf57eaf55e06b7754c4649a3f}\label{class_dealer_a518fd02cf57eaf55e06b7754c4649a3f}} 
+\index{Dealer@{Dealer}!Dealer@{Dealer}}
+\index{Dealer@{Dealer}!Dealer@{Dealer}}
+\doxysubsubsection{\texorpdfstring{Dealer()}{Dealer()}}
+{\footnotesize\ttfamily Dealer\+::\+Dealer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_dealer}{Dealer}} class. 
+
+\begin{DoxyReturn}{Returns}
+a dealer object ~\newline
+ 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dealer_a87adfb0ed4b55445f1c0146edd2b0456}\label{class_dealer_a87adfb0ed4b55445f1c0146edd2b0456}} 
+\index{Dealer@{Dealer}!addToDealerHand@{addToDealerHand}}
+\index{addToDealerHand@{addToDealerHand}!Dealer@{Dealer}}
+\doxysubsubsection{\texorpdfstring{addToDealerHand()}{addToDealerHand()}}
+{\footnotesize\ttfamily void Dealer\+::add\+To\+Dealer\+Hand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{face\+Up\+Card }\end{DoxyParamCaption})}
+
+
+
+Adds the initial card of a blackjack round to the dealers hand, which is face up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em face\+Up\+Card} & represents the card face up throughout the duration of a round that is added to the Dealers \mbox{\hyperlink{class_hand}{Hand}} attribute \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dealer_a03cc75803ed9f6e37607141e1d6bb934}\label{class_dealer_a03cc75803ed9f6e37607141e1d6bb934}} 
+\index{Dealer@{Dealer}!getHand@{getHand}}
+\index{getHand@{getHand}!Dealer@{Dealer}}
+\doxysubsubsection{\texorpdfstring{getHand()}{getHand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hand}{Hand}} Dealer\+::get\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method which returns the private \mbox{\hyperlink{class_hand}{Hand}} attribute. 
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_hand}{Hand}} object, wich represents this \mbox{\hyperlink{class_dealer}{Dealer}}\textquotesingle{}s \mbox{\hyperlink{class_hand}{Hand}} of Cards 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dealer_af582114261addd5a74a3ca2cb3490ccf}\label{class_dealer_af582114261addd5a74a3ca2cb3490ccf}} 
+\index{Dealer@{Dealer}!hit@{hit}}
+\index{hit@{hit}!Dealer@{Dealer}}
+\doxysubsubsection{\texorpdfstring{hit()}{hit()}}
+{\footnotesize\ttfamily void Dealer\+::hit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+A function which represents the move \char`\"{}\+Hit\char`\"{}; to hit is to request another card, given that their current, \mbox{\hyperlink{class_hand}{Hand}} attribute is lower than 21. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & represents the new card object which is drawn and pushed onto the \mbox{\hyperlink{class_hand}{Hand}} attribute \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dealer_a133f0a1f8f5cad283d11831797c700fa}\label{class_dealer_a133f0a1f8f5cad283d11831797c700fa}} 
+\index{Dealer@{Dealer}!setToDefault@{setToDefault}}
+\index{setToDefault@{setToDefault}!Dealer@{Dealer}}
+\doxysubsubsection{\texorpdfstring{setToDefault()}{setToDefault()}}
+{\footnotesize\ttfamily void Dealer\+::set\+To\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Setter method which resets all attributes of \mbox{\hyperlink{class_hand}{Hand}} object. 
+
+Method is used at the end of a round, when the \mbox{\hyperlink{class_dealer}{Dealer}}\textquotesingle{}s hand needs to be reset and cleared for the next round 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dealer.\+h\item 
+Dealer.\+cpp\end{DoxyCompactItemize}

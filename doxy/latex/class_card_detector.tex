@@ -1,0 +1,296 @@
+\hypertarget{class_card_detector}{}\doxysection{Card\+Detector Class Reference}
+\label{class_card_detector}\index{CardDetector@{CardDetector}}
+
+
+class for recognizing the ranks of captured playing cards  
+
+
+
+
+{\ttfamily \#include $<$C\+:/\+Users/aaron/\+One\+Drive/\+Documents/school/4th year/3307/\+Pi\+\_\+project/\+Card\+Detector.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_card_detector_1_1vector__sorter}{vector\+\_\+sorter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_card_detector_a84388744102164662b669ff352e1fb5e}{Card\+Detector}} ()
+\begin{DoxyCompactList}\small\item\em constructor for the class \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_card_detector_ac77549e6fbf7ca449a491b9a63a977eb}\label{class_card_detector_ac77549e6fbf7ca449a491b9a63a977eb}} 
+\mbox{\hyperlink{class_card_detector_ac77549e6fbf7ca449a491b9a63a977eb}{$\sim$\+Card\+Detector}} ()
+\begin{DoxyCompactList}\small\item\em destructor for the class \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_card}{Card}} \mbox{\hyperlink{class_card_detector_a2ed82eebeda0122a13896b4d780976a2}{get\+Er\+Baud}} ()
+\begin{DoxyCompactList}\small\item\em returns \mbox{\hyperlink{class_card}{Card}} object corresponding to that identified \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_card_detector_aef198eaf9492a7c5d072e5ca6b65b5e9}{sort\+Corners}} (std\+::vector$<$ cv\+::\+Point2f $>$ \&corners)
+\begin{DoxyCompactList}\small\item\em This function works to align the corners of the cards. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_card_detector_a7a43a6f1d90d0530013eafea09989d5d}{rank\+Matcher}} (cv\+::\+Mat rnk)
+\begin{DoxyCompactList}\small\item\em compares encoded image to local images to determine a best match, and if the match is sufficiently strong \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_card_detector_adae24a0b121d962fc8897e0264f8de87}{standardize\+Rank}} (cv\+::\+Mat r)
+\begin{DoxyCompactList}\small\item\em crops encoded image to contain only rank information from topleft corner \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_card_detector_ad70f0b7e2e1050f93ddb695de44bef38}{get\+Rank}} (cv\+::\+Mat islo)
+\begin{DoxyCompactList}\small\item\em isolates rank in image for comparison \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_card_detector_a855c0eb19a161ee3907e0e8297792e2f}{get\+Corner}} (cv\+::\+Mat \mbox{\hyperlink{class_card}{Card}})
+\begin{DoxyCompactList}\small\item\em locates top left corner of card in image \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_card_detector_a00dc3352d795d53175005772b5182413}{get\+Value}} (cv\+::\+Mat src)
+\begin{DoxyCompactList}\small\item\em returns value corresponding to the rank of the card in the image \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_card_detector_aecdd88c1614018b2233ae06a014a08be}{maximum}} (double number1, double number2, double number3)
+\begin{DoxyCompactList}\small\item\em This function returns the maximum of three doubles. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_card_detector_ae2e38572f10f0295234b328ae098f584}{almost\+Equal}} (double number1, double number2)
+\begin{DoxyCompactList}\small\item\em determines if two numbers are within a given threshold \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_card_detector_a3aaab303abb9550badb31ec840fb7895}{line\+Intersection}} (const cv\+::\+Point2f \&a1, const cv\+::\+Point2f \&b1, const cv\+::\+Point2f \&a2, const cv\+::\+Point2f \&b2, cv\+::\+Point2f \&intersection)
+\begin{DoxyCompactList}\small\item\em determines if two lines intersect \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_card_detector_ae029ee9b976c02f939d7991635b7aa16}\label{class_card_detector_ae029ee9b976c02f939d7991635b7aa16}} 
+\mbox{\hyperlink{class_camera_feed}{Camera\+Feed}} {\bfseries c\+\_\+feed}
+\item 
+\mbox{\Hypertarget{class_card_detector_a555011879da427fedb8c3d3879ee2c95}\label{class_card_detector_a555011879da427fedb8c3d3879ee2c95}} 
+cv\+::\+Rect {\bfseries Corner}
+\item 
+\mbox{\Hypertarget{class_card_detector_a63e67833842e475bbcb0e786532e6455}\label{class_card_detector_a63e67833842e475bbcb0e786532e6455}} 
+cv\+::\+Mat {\bfseries quad}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class for recognizing the ranks of captured playing cards 
+
+obtains images encoded into Mat objects, and then finds and extracts the top left corner of the captured image and compares it to local images of playing cards to determine the strongest match and if the match is sufficiently strong Code Heavily Influenced from github.\+com/arslanxone/playing\+Cards\+Detection/blob/master/\+B\+V\+Poker.cpp
+
+\begin{DoxyAuthor}{Authors}
+Aaron, Riley 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_card_detector_a84388744102164662b669ff352e1fb5e}\label{class_card_detector_a84388744102164662b669ff352e1fb5e}} 
+\index{CardDetector@{CardDetector}!CardDetector@{CardDetector}}
+\index{CardDetector@{CardDetector}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{CardDetector()}{CardDetector()}}
+{\footnotesize\ttfamily Card\+Detector\+::\+Card\+Detector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor for the class 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_card_detector_ae2e38572f10f0295234b328ae098f584}\label{class_card_detector_ae2e38572f10f0295234b328ae098f584}} 
+\index{CardDetector@{CardDetector}!almostEqual@{almostEqual}}
+\index{almostEqual@{almostEqual}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{almostEqual()}{almostEqual()}}
+{\footnotesize\ttfamily bool Card\+Detector\+::almost\+Equal (\begin{DoxyParamCaption}\item[{double}]{number1,  }\item[{double}]{number2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+determines if two numbers are within a given threshold 
+
+This function determines if two numbers are considered to be \char`\"{}equal enough\char`\"{} to be considered equal in the context of this program, based on the specified E\+P\+S\+I\+L\+ON value defined above
+
+
+\begin{DoxyParams}{Parameters}
+{\em number1} & first number \\
+\hline
+{\em number2} & second number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean indicating if arguments are within predefined threshold 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_card_detector_a855c0eb19a161ee3907e0e8297792e2f}\label{class_card_detector_a855c0eb19a161ee3907e0e8297792e2f}} 
+\index{CardDetector@{CardDetector}!getCorner@{getCorner}}
+\index{getCorner@{getCorner}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{getCorner()}{getCorner()}}
+{\footnotesize\ttfamily int Card\+Detector\+::get\+Corner (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{Card }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+locates top left corner of card in image 
+
+This function locates the top left hand corner of the card because this is where the rank (number) resides on the card. This new cropped picture is also filtered to make rank easier to find. Then get\+Rank is called to furthar process image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_card}{Card}}} & encoded image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result of comparison after finding regions of intersection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_card_detector_a2ed82eebeda0122a13896b4d780976a2}\label{class_card_detector_a2ed82eebeda0122a13896b4d780976a2}} 
+\index{CardDetector@{CardDetector}!getErBaud@{getErBaud}}
+\index{getErBaud@{getErBaud}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{getErBaud()}{getErBaud()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_card}{Card}} Card\+Detector\+::get\+Er\+Baud (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns \mbox{\hyperlink{class_card}{Card}} object corresponding to that identified 
+
+This function works to trigger the Pi\+Cam to actually take the photo of the card on the table. Then, it send the photo to the chain of processing functions. If the processing functions do not find a satisfactory match, then a new photo is taken and the process is started again. This process continues until a suitable match is found.
+
+\begin{DoxyReturn}{Returns}
+card object consistent with recognized card from image 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_card_detector_ad70f0b7e2e1050f93ddb695de44bef38}\label{class_card_detector_ad70f0b7e2e1050f93ddb695de44bef38}} 
+\index{CardDetector@{CardDetector}!getRank@{getRank}}
+\index{getRank@{getRank}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{getRank()}{getRank()}}
+{\footnotesize\ttfamily int Card\+Detector\+::get\+Rank (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{islo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+isolates rank in image for comparison 
+
+This function recieves a picture of the top left hand corner of the card and then isolates the rank icon within this corner, and crops out the suit because for the game of \mbox{\hyperlink{class_black_jack}{Black\+Jack}} suit is irrelevant. This rank picture is then passed to standardize\+Rank to further process image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em islo} & encoded image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result of comparison after standardizing the rank 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_card_detector_a00dc3352d795d53175005772b5182413}\label{class_card_detector_a00dc3352d795d53175005772b5182413}} 
+\index{CardDetector@{CardDetector}!getValue@{getValue}}
+\index{getValue@{getValue}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily int Card\+Detector\+::get\+Value (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+returns value corresponding to the rank of the card in the image 
+
+This function works to process the picture taken by the Pi\+Cam and ultimately returns the value of the card depicted in the picture. First, the original photo is processed to more easily find the photo contours aka the card edges, where the picture is the cropped to just be the card, and then sent to get\+Corner to furthar process the card to find the rank.
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & encoded image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value corresponding to card in encoded image 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_card_detector_a3aaab303abb9550badb31ec840fb7895}\label{class_card_detector_a3aaab303abb9550badb31ec840fb7895}} 
+\index{CardDetector@{CardDetector}!lineIntersection@{lineIntersection}}
+\index{lineIntersection@{lineIntersection}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{lineIntersection()}{lineIntersection()}}
+{\footnotesize\ttfamily bool Card\+Detector\+::line\+Intersection (\begin{DoxyParamCaption}\item[{const cv\+::\+Point2f \&}]{a1,  }\item[{const cv\+::\+Point2f \&}]{b1,  }\item[{const cv\+::\+Point2f \&}]{a2,  }\item[{const cv\+::\+Point2f \&}]{b2,  }\item[{cv\+::\+Point2f \&}]{intersection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+determines if two lines intersect 
+
+This function determines if two lines described 2 sets of 2 points have an intersection
+
+
+\begin{DoxyParams}{Parameters}
+{\em a1} & first coordinates first line \\
+\hline
+{\em b1} & first coordinates second line \\
+\hline
+{\em a2} & second coordinates first line \\
+\hline
+{\em b2} & second coordinates second line \\
+\hline
+{\em intersection} & intersection of lines \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean indicating if the two lines intersect each other 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_card_detector_aecdd88c1614018b2233ae06a014a08be}\label{class_card_detector_aecdd88c1614018b2233ae06a014a08be}} 
+\index{CardDetector@{CardDetector}!maximum@{maximum}}
+\index{maximum@{maximum}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{maximum()}{maximum()}}
+{\footnotesize\ttfamily double Card\+Detector\+::maximum (\begin{DoxyParamCaption}\item[{double}]{number1,  }\item[{double}]{number2,  }\item[{double}]{number3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+This function returns the maximum of three doubles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number1} & first number \\
+\hline
+{\em number2} & second number \\
+\hline
+{\em number3} & third number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+largest number of all the arguments passed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_card_detector_a7a43a6f1d90d0530013eafea09989d5d}\label{class_card_detector_a7a43a6f1d90d0530013eafea09989d5d}} 
+\index{CardDetector@{CardDetector}!rankMatcher@{rankMatcher}}
+\index{rankMatcher@{rankMatcher}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{rankMatcher()}{rankMatcher()}}
+{\footnotesize\ttfamily int Card\+Detector\+::rank\+Matcher (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{rnk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+compares encoded image to local images to determine a best match, and if the match is sufficiently strong 
+
+This function works to match captured image to a rank based on which precaptured rank pictures matches the best
+
+
+\begin{DoxyParams}{Parameters}
+{\em rnk} & encoded image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer value corresponding to one of thirteen different playing card values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_card_detector_aef198eaf9492a7c5d072e5ca6b65b5e9}\label{class_card_detector_aef198eaf9492a7c5d072e5ca6b65b5e9}} 
+\index{CardDetector@{CardDetector}!sortCorners@{sortCorners}}
+\index{sortCorners@{sortCorners}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{sortCorners()}{sortCorners()}}
+{\footnotesize\ttfamily void Card\+Detector\+::sort\+Corners (\begin{DoxyParamCaption}\item[{std\+::vector$<$ cv\+::\+Point2f $>$ \&}]{corners }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This function works to align the corners of the cards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em corners} & reference to vector of points defining corners which is to be sorted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_card_detector_adae24a0b121d962fc8897e0264f8de87}\label{class_card_detector_adae24a0b121d962fc8897e0264f8de87}} 
+\index{CardDetector@{CardDetector}!standardizeRank@{standardizeRank}}
+\index{standardizeRank@{standardizeRank}!CardDetector@{CardDetector}}
+\doxysubsubsection{\texorpdfstring{standardizeRank()}{standardizeRank()}}
+{\footnotesize\ttfamily int Card\+Detector\+::standardize\+Rank (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+crops encoded image to contain only rank information from topleft corner 
+
+This function recieves a picture of the rank of the card and then further crops the rank photo in such a way that it can be properly compared to the stock rank photos used to decide similarity. then returns the value obtained by calling rank\+Matcher on the cropped image
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & encoded image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rank of encoded image of playing card r 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Card\+Detector.\+h\item 
+Card\+Detector.\+cpp\end{DoxyCompactItemize}

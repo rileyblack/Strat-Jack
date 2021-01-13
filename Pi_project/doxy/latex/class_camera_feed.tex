@@ -1,0 +1,81 @@
+\hypertarget{class_camera_feed}{}\doxysection{Camera\+Feed Class Reference}
+\label{class_camera_feed}\index{CameraFeed@{CameraFeed}}
+
+
+class for camera  
+
+
+
+
+{\ttfamily \#include $<$C\+:/\+Users/aaron/\+One\+Drive/\+Documents/school/4th year/3307/\+Pi\+\_\+project/\+Camera\+Feed.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_camera_feed_a430b843da434d54b9c63f0d25fc89d0e}{start}} ()
+\begin{DoxyCompactList}\small\item\em initializes camera feed from Pi\+Cam \end{DoxyCompactList}\item 
+cv\+::\+Mat \mbox{\hyperlink{class_camera_feed_a87f2e1465062d39db96cf96347e99438}{read}} ()
+\begin{DoxyCompactList}\small\item\em get frame from camera feed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_feed_aa139d2fee78c470b97cda37eeec482b3}{stop}} ()
+\begin{DoxyCompactList}\small\item\em stop camera feed \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_feed_aa6ad5762fc459b5626b22cd041f44b05}\label{class_camera_feed_aa6ad5762fc459b5626b22cd041f44b05}} 
+cv\+::\+Video\+Capture {\bfseries v\+\_\+feed}
+\item 
+\mbox{\Hypertarget{class_camera_feed_aa7a82e4526e31391dc9881d99342f63e}\label{class_camera_feed_aa7a82e4526e31391dc9881d99342f63e}} 
+cv\+::\+Mat {\bfseries frame}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class for camera 
+
+object for representing live feed of Pi\+Cam and fetching frames
+
+\begin{DoxyAuthor}{Author}
+Aaron 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_feed_a87f2e1465062d39db96cf96347e99438}\label{class_camera_feed_a87f2e1465062d39db96cf96347e99438}} 
+\index{CameraFeed@{CameraFeed}!read@{read}}
+\index{read@{read}!CameraFeed@{CameraFeed}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily Mat Camera\+Feed\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get frame from camera feed 
+
+\begin{DoxyReturn}{Returns}
+Pi\+Cam frame encoded in a Mat 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_feed_a430b843da434d54b9c63f0d25fc89d0e}\label{class_camera_feed_a430b843da434d54b9c63f0d25fc89d0e}} 
+\index{CameraFeed@{CameraFeed}!start@{start}}
+\index{start@{start}!CameraFeed@{CameraFeed}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Camera\+Feed\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initializes camera feed from Pi\+Cam 
+
+starts camera \mbox{\Hypertarget{class_camera_feed_aa139d2fee78c470b97cda37eeec482b3}\label{class_camera_feed_aa139d2fee78c470b97cda37eeec482b3}} 
+\index{CameraFeed@{CameraFeed}!stop@{stop}}
+\index{stop@{stop}!CameraFeed@{CameraFeed}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Camera\+Feed\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+stop camera feed 
+
+closes Video\+Capture object 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Camera\+Feed.\+h\item 
+Camera\+Feed.\+cpp\end{DoxyCompactItemize}

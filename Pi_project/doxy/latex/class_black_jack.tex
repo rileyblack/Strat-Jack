@@ -1,0 +1,330 @@
+\hypertarget{class_black_jack}{}\doxysection{Black\+Jack Class Reference}
+\label{class_black_jack}\index{BlackJack@{BlackJack}}
+
+
+Class to represent a game of blackjack.  
+
+
+
+
+{\ttfamily \#include $<$C\+:/\+Users/aaron/\+One\+Drive/\+Documents/school/4th year/3307/\+Pi\+\_\+project/\+Black\+Jack.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_black_jack_a83500b8f60661b16f2a0c3959acdaa74}{Black\+Jack}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_black_jack_ac99c9ca3c024a0a9091eb18ac84ddb2b}{$\sim$\+Black\+Jack}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_black_jack_a5206e4011f756f4812a82b3224394a12}{Black\+Jack}} (std\+::string username, int balance)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_black_jack_a0e5a0e6cb75a35dd55651ba2707c9d69}{get\+In\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Boolean Method which determined if \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object is in game or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dealer}{Dealer}} \mbox{\hyperlink{class_black_jack_a94267f2049ca0a45666778e7e4867357}{get\+Dealer}} ()
+\begin{DoxyCompactList}\small\item\em Getter method which returns the \mbox{\hyperlink{class_dealer}{Dealer}} object form \mbox{\hyperlink{class_black_jack}{Black\+Jack}} game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_user}{User}} \mbox{\hyperlink{class_black_jack_ad3d14e71d6a016f54348f1221344f1ed}{get\+User}} ()
+\begin{DoxyCompactList}\small\item\em Getter method which returns the \mbox{\hyperlink{class_user}{User}} object form \mbox{\hyperlink{class_black_jack}{Black\+Jack}} game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_strategy}{Strategy}} \mbox{\hyperlink{class_black_jack_ab96423883dea7d23ad88be32fd8c0901}{get\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Getter method which returns the \mbox{\hyperlink{class_strategy}{Strategy}} object form \mbox{\hyperlink{class_black_jack}{Black\+Jack}} game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_black_jack_a9dcaad9e592323e68d4950c4c7a4b08e}{set\+In\+Game}} (bool choice)
+\begin{DoxyCompactList}\small\item\em Setter method which changes the boolean attribute in\+Game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_black_jack_afc349c963b33c411a52a67e5dac63fd9}{set\+Dealer\+Hand}} (\mbox{\hyperlink{class_card}{Card}} face\+Up\+Card)
+\begin{DoxyCompactList}\small\item\em Adds the initial card of a blackjack round to the dealer attribute\textquotesingle{}s hand, which is face up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_black_jack_a3aa1846c04f183f97e90b65be3ab8636}{set\+User\+Hand}} (\mbox{\hyperlink{class_card}{Card}} card1, \mbox{\hyperlink{class_card}{Card}} card2)
+\begin{DoxyCompactList}\small\item\em Adds the initial two cards of a blackjack round to the \mbox{\hyperlink{class_user}{User}} attribute\textquotesingle{}s hand. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_black_jack_aa7c0405e832d4b4e2fa5b221291b5835}{set\+User\+Balance}} (int amount)
+\begin{DoxyCompactList}\small\item\em Setter method which changes the value of Use attribute\textquotesingle{}s balance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_black_jack_a52eb57e2c601ff87fe914071b26314b5}{user\+Hit}} (\mbox{\hyperlink{class_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em function which represents the move \char`\"{}\+Hit\char`\"{} for \mbox{\hyperlink{class_user}{User}} attribute in a Blackjack round \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_black_jack_a651893a830ae35bb9559b572986bd07e}{dealer\+Hit}} (\mbox{\hyperlink{class_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em function which represents the move \char`\"{}\+Hit\char`\"{} for \mbox{\hyperlink{class_dealer}{Dealer}} attribute in a Blackjack round \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_black_jack_aa7bf885cdcdf57640644e38380872ace}{stand}} ()
+\begin{DoxyCompactList}\small\item\em method which represents the move \char`\"{}\+Stay\char`\"{} in a blackjack round \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_black_jack_adf0881f7a684389711032f80f85850c0}{double\+Down}} (\mbox{\hyperlink{class_card}{Card}} card)
+\begin{DoxyCompactList}\small\item\em method which represents the move \char`\"{}\+Double Down in a backjack round\char`\"{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_black_jack_a2d0a7db6634f5f8b31d1be18c48f0d40}{clear\+Cards}} ()
+\begin{DoxyCompactList}\small\item\em method which clears the hand attribute of \mbox{\hyperlink{class_user}{User}} and \mbox{\hyperlink{class_dealer}{Dealer}} attributes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_black_jack_a867de9eb1b3e23534b2a04ae2384ed33}{set\+Defaults}} ()
+\begin{DoxyCompactList}\small\item\em resets board \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_black_jack_abb261ed0c0e85a7dbb5f3b8d1559f16f}\label{class_black_jack_abb261ed0c0e85a7dbb5f3b8d1559f16f}} 
+\mbox{\hyperlink{class_strategy}{Strategy}} {\bfseries strat}
+\item 
+\mbox{\Hypertarget{class_black_jack_ad7f5f148d5c27fcfb3714516d5fa932e}\label{class_black_jack_ad7f5f148d5c27fcfb3714516d5fa932e}} 
+\mbox{\hyperlink{class_dealer}{Dealer}} {\bfseries dealer}
+\item 
+\mbox{\Hypertarget{class_black_jack_aeae9b4e58eab7528bb1ab0ddd68fac04}\label{class_black_jack_aeae9b4e58eab7528bb1ab0ddd68fac04}} 
+\mbox{\hyperlink{class_user}{User}} {\bfseries user}
+\item 
+\mbox{\Hypertarget{class_black_jack_a442ed2b12c046807bdb7355e5e1ecfd7}\label{class_black_jack_a442ed2b12c046807bdb7355e5e1ecfd7}} 
+bool {\bfseries in\+Game}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to represent a game of blackjack. 
+
+contains all internal logic implemented in methods required for playing a game of blackjack
+
+\begin{DoxyAuthor}{Authors}
+Mike, Sam 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_black_jack_a83500b8f60661b16f2a0c3959acdaa74}\label{class_black_jack_a83500b8f60661b16f2a0c3959acdaa74}} 
+\index{BlackJack@{BlackJack}!BlackJack@{BlackJack}}
+\index{BlackJack@{BlackJack}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{BlackJack()}{BlackJack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Black\+Jack\+::\+Black\+Jack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object. 
+
+\begin{DoxyReturn}{Returns}
+a new \mbox{\hyperlink{class_user}{User}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_black_jack_ac99c9ca3c024a0a9091eb18ac84ddb2b}\label{class_black_jack_ac99c9ca3c024a0a9091eb18ac84ddb2b}} 
+\index{BlackJack@{BlackJack}!````~BlackJack@{$\sim$BlackJack}}
+\index{````~BlackJack@{$\sim$BlackJack}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{$\sim$BlackJack()}{~BlackJack()}}
+{\footnotesize\ttfamily Black\+Jack\+::$\sim$\+Black\+Jack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object. 
+
+destroys the instance of this \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object, once the object goes out of the scope \mbox{\Hypertarget{class_black_jack_a5206e4011f756f4812a82b3224394a12}\label{class_black_jack_a5206e4011f756f4812a82b3224394a12}} 
+\index{BlackJack@{BlackJack}!BlackJack@{BlackJack}}
+\index{BlackJack@{BlackJack}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{BlackJack()}{BlackJack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Black\+Jack\+::\+Black\+Jack (\begin{DoxyParamCaption}\item[{std\+::string}]{username,  }\item[{int}]{balance }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & represents the identity of the \mbox{\hyperlink{class_user}{User}} for the \mbox{\hyperlink{class_black_jack}{Black\+Jack}} game ~\newline
+ \\
+\hline
+{\em balance} & is an integer which represents the balance that the user will begin with at the beginning of the \mbox{\hyperlink{class_black_jack}{Black\+Jack}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_black_jack_a2d0a7db6634f5f8b31d1be18c48f0d40}\label{class_black_jack_a2d0a7db6634f5f8b31d1be18c48f0d40}} 
+\index{BlackJack@{BlackJack}!clearCards@{clearCards}}
+\index{clearCards@{clearCards}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{clearCards()}{clearCards()}}
+{\footnotesize\ttfamily void Black\+Jack\+::clear\+Cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method which clears the hand attribute of \mbox{\hyperlink{class_user}{User}} and \mbox{\hyperlink{class_dealer}{Dealer}} attributes 
+
+resets \mbox{\hyperlink{class_dealer}{Dealer}} and Userto its default configuration upon its construction \mbox{\Hypertarget{class_black_jack_a651893a830ae35bb9559b572986bd07e}\label{class_black_jack_a651893a830ae35bb9559b572986bd07e}} 
+\index{BlackJack@{BlackJack}!dealerHit@{dealerHit}}
+\index{dealerHit@{dealerHit}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{dealerHit()}{dealerHit()}}
+{\footnotesize\ttfamily void Black\+Jack\+::dealer\+Hit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+function which represents the move \char`\"{}\+Hit\char`\"{} for \mbox{\hyperlink{class_dealer}{Dealer}} attribute in a Blackjack round 
+
+To hit is to request another card, given that their current \mbox{\hyperlink{class_hand}{Hand}} attribute is lower than 21
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & represents the new card object which is drawn and pushed onto the \mbox{\hyperlink{class_hand}{Hand}} attribute of the \mbox{\hyperlink{class_dealer}{Dealer}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_black_jack_adf0881f7a684389711032f80f85850c0}\label{class_black_jack_adf0881f7a684389711032f80f85850c0}} 
+\index{BlackJack@{BlackJack}!doubleDown@{doubleDown}}
+\index{doubleDown@{doubleDown}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{doubleDown()}{doubleDown()}}
+{\footnotesize\ttfamily void Black\+Jack\+::double\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+method which represents the move \char`\"{}\+Double Down in a backjack round\char`\"{} 
+
+To double down is to do a hit and also double the user attribute\textquotesingle{}s bet for the current round of blackjack
+
+
+\begin{DoxyParams}{Parameters}
+{\em bet} & represents the integer of the users current bet, which will doubled and updated accodringly \\
+\hline
+{\em card} & represents the card which will be drawn from the \char`\"{}hit\char`\"{} portion of a double down move ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_black_jack_a94267f2049ca0a45666778e7e4867357}\label{class_black_jack_a94267f2049ca0a45666778e7e4867357}} 
+\index{BlackJack@{BlackJack}!getDealer@{getDealer}}
+\index{getDealer@{getDealer}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{getDealer()}{getDealer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dealer}{Dealer}} Black\+Jack\+::get\+Dealer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method which returns the \mbox{\hyperlink{class_dealer}{Dealer}} object form \mbox{\hyperlink{class_black_jack}{Black\+Jack}} game. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_dealer}{Dealer}} object from this \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_black_jack_a0e5a0e6cb75a35dd55651ba2707c9d69}\label{class_black_jack_a0e5a0e6cb75a35dd55651ba2707c9d69}} 
+\index{BlackJack@{BlackJack}!getInGame@{getInGame}}
+\index{getInGame@{getInGame}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{getInGame()}{getInGame()}}
+{\footnotesize\ttfamily bool Black\+Jack\+::get\+In\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Boolean Method which determined if \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object is in game or not. 
+
+if the blackjack game is in session, then it is true, determining if a game is in session
+
+\begin{DoxyReturn}{Returns}
+true if there is a current \mbox{\hyperlink{class_black_jack}{Black\+Jack}} game in session 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_black_jack_ab96423883dea7d23ad88be32fd8c0901}\label{class_black_jack_ab96423883dea7d23ad88be32fd8c0901}} 
+\index{BlackJack@{BlackJack}!getStrategy@{getStrategy}}
+\index{getStrategy@{getStrategy}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{getStrategy()}{getStrategy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_strategy}{Strategy}} Black\+Jack\+::get\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method which returns the \mbox{\hyperlink{class_strategy}{Strategy}} object form \mbox{\hyperlink{class_black_jack}{Black\+Jack}} game. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_strategy}{Strategy}} object from this \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_black_jack_ad3d14e71d6a016f54348f1221344f1ed}\label{class_black_jack_ad3d14e71d6a016f54348f1221344f1ed}} 
+\index{BlackJack@{BlackJack}!getUser@{getUser}}
+\index{getUser@{getUser}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user}{User}} Black\+Jack\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method which returns the \mbox{\hyperlink{class_user}{User}} object form \mbox{\hyperlink{class_black_jack}{Black\+Jack}} game. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_user}{User}} object from this \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_black_jack_afc349c963b33c411a52a67e5dac63fd9}\label{class_black_jack_afc349c963b33c411a52a67e5dac63fd9}} 
+\index{BlackJack@{BlackJack}!setDealerHand@{setDealerHand}}
+\index{setDealerHand@{setDealerHand}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{setDealerHand()}{setDealerHand()}}
+{\footnotesize\ttfamily void Black\+Jack\+::set\+Dealer\+Hand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{face\+Up\+Card }\end{DoxyParamCaption})}
+
+
+
+Adds the initial card of a blackjack round to the dealer attribute\textquotesingle{}s hand, which is face up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em face\+Up\+Card} & represents the card face up throughout the duration of a round that is added to the Dealers \mbox{\hyperlink{class_hand}{Hand}} attribute \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_black_jack_a867de9eb1b3e23534b2a04ae2384ed33}\label{class_black_jack_a867de9eb1b3e23534b2a04ae2384ed33}} 
+\index{BlackJack@{BlackJack}!setDefaults@{setDefaults}}
+\index{setDefaults@{setDefaults}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{setDefaults()}{setDefaults()}}
+{\footnotesize\ttfamily void Black\+Jack\+::set\+Defaults (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+resets board 
+
+sets blackjack board configuration to defaults \mbox{\Hypertarget{class_black_jack_a9dcaad9e592323e68d4950c4c7a4b08e}\label{class_black_jack_a9dcaad9e592323e68d4950c4c7a4b08e}} 
+\index{BlackJack@{BlackJack}!setInGame@{setInGame}}
+\index{setInGame@{setInGame}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{setInGame()}{setInGame()}}
+{\footnotesize\ttfamily void Black\+Jack\+::set\+In\+Game (\begin{DoxyParamCaption}\item[{bool}]{choice }\end{DoxyParamCaption})}
+
+
+
+Setter method which changes the boolean attribute in\+Game. 
+
+This is used to switch the \mbox{\hyperlink{class_black_jack}{Black\+Jack}} object to being in a game (at the beginning of a session) or at the !in\+Game (if the session is over, or before session has begun)
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & represensts the boolean value determining if \mbox{\hyperlink{class_black_jack}{Black\+Jack}} is in game or not ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_black_jack_aa7c0405e832d4b4e2fa5b221291b5835}\label{class_black_jack_aa7c0405e832d4b4e2fa5b221291b5835}} 
+\index{BlackJack@{BlackJack}!setUserBalance@{setUserBalance}}
+\index{setUserBalance@{setUserBalance}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{setUserBalance()}{setUserBalance()}}
+{\footnotesize\ttfamily void Black\+Jack\+::set\+User\+Balance (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Setter method which changes the value of Use attribute\textquotesingle{}s balance. 
+
+Invoked after a blackjack round, increases if the \mbox{\hyperlink{class_user}{User}} won their bet, decreases by that amount otherwise \mbox{\Hypertarget{class_black_jack_a3aa1846c04f183f97e90b65be3ab8636}\label{class_black_jack_a3aa1846c04f183f97e90b65be3ab8636}} 
+\index{BlackJack@{BlackJack}!setUserHand@{setUserHand}}
+\index{setUserHand@{setUserHand}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{setUserHand()}{setUserHand()}}
+{\footnotesize\ttfamily void Black\+Jack\+::set\+User\+Hand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card1,  }\item[{\mbox{\hyperlink{class_card}{Card}}}]{card2 }\end{DoxyParamCaption})}
+
+
+
+Adds the initial two cards of a blackjack round to the \mbox{\hyperlink{class_user}{User}} attribute\textquotesingle{}s hand. 
+
+indicates the first card tha the \mbox{\hyperlink{class_dealer}{Dealer}} draws at the beginning of the round
+
+
+\begin{DoxyParams}{Parameters}
+{\em card1} & represents the first card which is traditionally face up throughout the durationod a round \\
+\hline
+{\em card1} & represents the second face up card for the initial \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s hand \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_black_jack_aa7bf885cdcdf57640644e38380872ace}\label{class_black_jack_aa7bf885cdcdf57640644e38380872ace}} 
+\index{BlackJack@{BlackJack}!stand@{stand}}
+\index{stand@{stand}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{stand()}{stand()}}
+{\footnotesize\ttfamily void Black\+Jack\+::stand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method which represents the move \char`\"{}\+Stay\char`\"{} in a blackjack round 
+
+To stand is to request that the user\textquotesingle{}s turn is over, and control is given to the dealer to deal their cards to determine a winner \mbox{\Hypertarget{class_black_jack_a52eb57e2c601ff87fe914071b26314b5}\label{class_black_jack_a52eb57e2c601ff87fe914071b26314b5}} 
+\index{BlackJack@{BlackJack}!userHit@{userHit}}
+\index{userHit@{userHit}!BlackJack@{BlackJack}}
+\doxysubsubsection{\texorpdfstring{userHit()}{userHit()}}
+{\footnotesize\ttfamily void Black\+Jack\+::user\+Hit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+
+
+function which represents the move \char`\"{}\+Hit\char`\"{} for \mbox{\hyperlink{class_user}{User}} attribute in a Blackjack round 
+
+To hit is to request another card, given that their current \mbox{\hyperlink{class_hand}{Hand}} attribute is lower than 21
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & represents the new card object which is drawn and pushed onto the \mbox{\hyperlink{class_hand}{Hand}} attribute of the \mbox{\hyperlink{class_user}{User}} ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Black\+Jack.\+h\item 
+Black\+Jack.\+cpp\end{DoxyCompactItemize}
