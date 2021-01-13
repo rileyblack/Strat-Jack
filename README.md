@@ -16,4 +16,4 @@ Intelligent computer-vision based real-time embedded system which recommends opt
 
 ## Supporting Files
 * For Doxygen documentation, click [here](https://rileyblack.github.io/Strat-Jack/)
-* For class diagram, open class_diagram.png
+* For class diagram, open Pi_project/class_diagram.png
