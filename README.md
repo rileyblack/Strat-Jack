@@ -15,5 +15,5 @@ Intelligent computer-vision based real-time embedded system which recommends opt
 * Formal software design components (user story requirement generation, risk identification/mitigation, UML, testing, documentation, etc.)
 
 ## Supporting Files
-* For [Doxygen](https://www.doxygen.nl/index.html) documentation -> Strat-Jack/doxy/html/index.html
-* For class diagram -> open Strat-Jack/class_diagram.png
+* For Doxygen documentation, click [here](https://rileyblack.github.io/Strat-Jack/)
+* For class diagram, open class_diagram.png
